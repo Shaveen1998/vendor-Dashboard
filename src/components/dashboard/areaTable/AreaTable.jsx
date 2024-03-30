@@ -1,4 +1,3 @@
-import AreaTableAction from "./AreaTableAction";
 import "./AreaTable.scss";
 
 const TABLE_HEADS = [
@@ -7,28 +6,30 @@ const TABLE_HEADS = [
   "Date",
   "Number of guests",
   "Status",
-  "Duration",
+  "Price",
   "Category",
 ];
 
 const TABLE_DATA = [
   {
     id: 100,
-    name: "Iphone 13 Pro",
+    name: "Superior Family suite",
     order_id: 11232,
-    date: "Jun 29,2022",
+    date: "Jun 29,2024",
     customer: "Afaq Karim",
-    status: "delivered",
-    amount: 400,
+    status: "Booked",
+    amount: 500,
+    category: "Superior",
   },
   {
     id: 101,
-    name: "Macbook Pro",
+    name: "",
     order_id: 11232,
     date: "Jun 29,2022",
     customer: "Afaq Karim",
     status: "pending",
     amount: 288,
+    category: "Superior",
   },
   {
     id: 102,
@@ -38,6 +39,7 @@ const TABLE_DATA = [
     customer: "Afaq Karim",
     status: "canceled",
     amount: 500,
+    category: "Superior",
   },
   {
     id: 103,
@@ -47,6 +49,7 @@ const TABLE_DATA = [
     customer: "Afaq Karim",
     status: "delivered",
     amount: 100,
+    category: "Superior",
   },
   {
     id: 104,
@@ -56,6 +59,7 @@ const TABLE_DATA = [
     customer: "Afaq Karim",
     status: "delivered",
     amount: 60,
+    category: "Superior",
   },
   {
     id: 105,
@@ -65,6 +69,7 @@ const TABLE_DATA = [
     customer: "Afaq Karim",
     status: "delivered",
     amount: 80,
+    category: "Superior",
   },
 ];
 
@@ -100,9 +105,8 @@ const AreaTable = () => {
                     </div>
                   </td>
                   <td>${dataItem.amount.toFixed(2)}</td>
-                  <td className="dt-cell-action">
-                    <AreaTableAction />
-                  </td>
+                  <td>{dataItem.category}</td>
+                  <td className="dt-cell-action"></td>
                 </tr>
               );
             })}
