@@ -23,7 +23,7 @@ const TABLE_DATA = [
   },
   {
     id: 101,
-    name: "",
+    name: "Sea View Room",
     order_id: 11232,
     date: "Jun 29,2022",
     customer: "Afaq Karim",
@@ -33,7 +33,7 @@ const TABLE_DATA = [
   },
   {
     id: 102,
-    name: "Apple Watch",
+    name: "Business Suite",
     order_id: 11232,
     date: "Jun 29,2022",
     customer: "Afaq Karim",
@@ -43,7 +43,7 @@ const TABLE_DATA = [
   },
   {
     id: 103,
-    name: "Microsoft Book",
+    name: "Mountain pine room",
     order_id: 11232,
     date: "Jun 29,2022",
     customer: "Afaq Karim",
@@ -53,7 +53,7 @@ const TABLE_DATA = [
   },
   {
     id: 104,
-    name: "Apple Pen",
+    name: "Double bed luxury",
     order_id: 11232,
     date: "Jun 29,2022",
     customer: "Afaq Karim",
@@ -63,7 +63,7 @@ const TABLE_DATA = [
   },
   {
     id: 105,
-    name: "Airpods",
+    name: "Family fiesta",
     order_id: 11232,
     date: "Jun 29,2022",
     customer: "Afaq Karim",
